@@ -1,4 +1,3 @@
-// @ts-ignore
 import Header from "@/components/header";
 import HeroSection from "@/components/home/hero-section";
 import ProductSection from "@/components/home/product-section";

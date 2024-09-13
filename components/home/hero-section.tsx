@@ -23,7 +23,7 @@ const HeroSection = () => {
         // onMouseLeave={plugin.current.reset}
       >
         <CarouselContent className="h-full">
-          {IMAGES.map((img, index) => (
+          {IMAGES.map((img) => (
             <CarouselItem key={img.id} className="h-full">
               <div className="w-full h-full relative">
                 <img
