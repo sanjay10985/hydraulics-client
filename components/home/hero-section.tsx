@@ -11,7 +11,6 @@ import { ChevronLeftIcon, ChevronRightIcon } from "lucide-react";
 import Autoplay from "embla-carousel-autoplay";
 import { IMAGES } from "@/constants";
 import Image from "next/image";
-import style from "styled-jsx/style";
 
 const HeroSection = () => {
   const plugin = useRef(Autoplay({ delay: 2000, stopOnInteraction: true }));
