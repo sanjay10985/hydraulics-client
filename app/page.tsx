@@ -7,7 +7,7 @@ import AboutSection from "@/components/home/about-section";
 
 export default function Home() {
   return (
-    <div className="flex flex-col min-h-[100dvh] container mx-auto">
+    <div className="flex flex-col min-h-[100dvh]  mx-auto">
       <Header />
       <main className="flex-1">
         <HeroSection />

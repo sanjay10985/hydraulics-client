@@ -10,6 +10,8 @@ import {
 import { ChevronLeftIcon, ChevronRightIcon } from "lucide-react";
 import Autoplay from "embla-carousel-autoplay";
 import { IMAGES } from "@/constants";
+import Image from "next/image";
+import style from "styled-jsx/style";
 
 const HeroSection = () => {
   const plugin = useRef(Autoplay({ delay: 2000, stopOnInteraction: true }));
@@ -18,7 +20,7 @@ const HeroSection = () => {
     <section className="w-full h-[720px] relative overflow-hidden">
       <Carousel
         plugins={[plugin.current]}
-        className="w-full h-full "
+        className="w-full h-[720px] "
         // onMouseEnter={plugin.current.stop}
         // onMouseLeave={plugin.current.reset}
       >
@@ -26,10 +28,13 @@ const HeroSection = () => {
           {IMAGES.map((img) => (
             <CarouselItem key={img.id} className="h-full">
               <div className="w-full h-full relative">
-                <img
+                <Image
                   src={img.src}
                   alt={img.alt}
-                  className="w-full h-full  object-end"
+                  width={0}
+                  sizes="100vw"
+                  height={0}
+                  style={{ width: "100%", height: "full" }}
                 />
                 <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/50" />
               </div>

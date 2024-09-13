@@ -91,7 +91,7 @@ const ContactForm = () => {
       </form>
       {submitStatus === "success" && (
         <p className="text-green-600">
-          Thank you for your message! We'll get back to you soon.
+          Thank you for your message! We&apos;ll get back to you soon.
         </p>
       )}
       {submitStatus === "error" && (
